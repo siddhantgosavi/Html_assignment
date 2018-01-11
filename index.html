@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>mangoapps</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container header">
+      <div class="row clearfix">
+        <div class="col-md-2 clearfix">
+          <div class="pull-left hamburgerButtonWrap">
+            <button id="hamburgerButton" class="hamburger buttonRest">
+            <span class="hamburgerIcon"></span>
+            </button>
+          </div>
+          <a class="pull-left logo"><img class="img-responsive" alt="logo" src="./images/logo.png"/></a>
+        </div>
+        <div class="col-md-offset-3 col-md-2">
+          <a class="btn btn-primary composeButtonWrap colorWhite"><i class="glyphicon glyphicon-plus"></i> Compose</a>
+        </div>
+        <div class="col-md-offset-2 col-md-2 headerIconWrap">
+          <i class="material-icons cursorPointer">search</i>
+          <i class="material-icons cursorPointer">notifications</i>
+          <button class="btn btn-primary colorWhite">admin</button>
+        </div>
+        <div class="col-md-1 userImageWrap">
+          <div class="imageWrapper pull-left">
+            <img class="img-responsive img-circle" src="./images/avatar.png" alt="user image" />
+          </div>
+          <span class="colorWhite welcomeText">Hello <strong>Kevin</strong></span>
+          <i class="material-icons cursorPointer colorWhite">expand_more</i>
+        </div>
+      </div>
+    </div>
+    <div class="container mainContentWrap">
+      <div class="row">
+        <div class="col-md-2">
+          <ul class="leftNavigation">
+            <li>
+              <a>
+              <i class="glyphicon glyphicon-file"></i>
+              <span>News Feeds</span>
+              </a>
+            </li>
+            <li>
+              <a>
+              <i class="glyphicon glyphicon-envelope"></i>
+              <span>Messages</span>
+              </a>
+            </li>
+            <li>
+              <a>
+              <i class="glyphicon glyphicon-tasks"></i>
+              <span>Projects</span>
+              </a>
+            </li>
+            <li>
+              <a>
+              <i class="glyphicon glyphicon-scale"></i>
+              <span>Groups</span>
+              </a>
+            </li>
+            <li>
+              <a>
+              <i class="glyphicon glyphicon-object-align-right"></i>
+              <span>Opportunity</span>
+              </a>
+            </li>
+            <li>
+              <a>
+              <i class="glyphicon glyphicon-user"></i>
+              <span>People</span>
+              </a>
+            </li>
+            <li>
+              <a>
+              <i class="glyphicon glyphicon-option-horizontal"></i>
+              <span>More</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-7">
+          <div class="clearfix searchTitleWrap">
+            <h4 class="pull-left">Opportunities > Lunar Paints</h4>
+            <div class="searchWrap pull-left clearfix">
+              <input type="text" class="searchTerm" placeholder="Search">
+              <i class="searchButton material-icons">search</i>
+            </div>
+          </div>
+          <div class="clearfix whiteBg">
+            <ul class="col-md-3 contentListing">
+              <li><a class="active">Feeds</a></li>
+              <li><a>Members</a></li>
+              <li><a>Files</a></li>
+              <li><a>Post</a></li>
+              <li><a>Wikis</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Trackers</a></li>
+            </ul>
+            <div class="col-md-9">
+              <ul class="clearfix feedsSublisting">
+                <li class="pull-left">
+                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Share an update in opportunity">Update</a>
+                </li>
+                <li class="pull-left">				
+                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Share an update in opportunity">Question</a>
+                </li>
+                <li class="pull-left">
+                  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Share an update in opportunity">Poll</a>
+                </li>
+              </ul>
+              <div class="clearfix commentFilterWrap">
+                <ul class="pull-left commentListing">
+                  <li class="pull-left">
+                    <a>Primary</a>
+                  </li>
+                  <li class="pull-left"><a>Secondary</a></li>
+                  <li class="pull-left"><a>Mentions</a></li>
+                </ul>
+                <div class="filterWrap pull-right">
+                  <span>Filter: All Feeds<span class="caret cursorPointer"></span></span>
+                  <i class="material-icons settingIcon cursorPointer">settings</i>
+                </div>
+              </div>
+              <ul class="userDetailsListing">
+                <li class="clearfix">
+                  <div class="imageWrapper pull-left">
+                    <img class="img-responsive" src="./images/avatar.png" alt="user image" />
+                  </div>
+                  <div class="pull-left activityDetailsWrapper">
+                    <div class="activityDetailsWrap">
+                      <h4>Dave Morris</h4>
+                      <p><span>Lisa</span> has been added to this opportunity</p>
+                      <div class="clearfix">
+                        <ul class="pull-left actionListing">
+                          <li class="pull-left"><a>Like</a></li>
+                          <li class="pull-left"><a>Comment</a></li>
+                          <li class="pull-left"><a>More <span class="caret"></span></a></li>
+                        </ul>
+                        <span class="pull-left">Feb 12, 2015 14:04 from web</span>
+                      </div>
+                    </div>
+                    <div class="commentWrap">
+                      <input type="text" placeholder="Write a comment" />
+                    </div>
+                  </div>
+                </li>
+                <li class="clearfix">
+                  <div class="imageWrapper pull-left">
+                    <img class="img-responsive" src="./images/avatar.png" alt="user image" />
+                  </div>
+                  <div class="pull-left activityDetailsWrapper">
+                    <div class="activityDetailsWrap">
+                      <h4>James Baker</h4>
+                      <p>this is a test video ... want to check the video quality and the voice over as well...</p>
+                      <div class="videoContainerWrap text-center">
+                        <button id="playPauseButton" class="btn btn-info videoContainer">
+                        <i class="glyphicon glyphicon-play"></i>
+                        <i class="glyphicon glyphicon-pause"></i>
+                        </button>
+                        <video id="videoWrap" width="420">
+                          <source src="./media/tutorial.mp4" type="video/mp4">
+                          Your browser does not support HTML5 video.
+                        </video>
+                      </div>
+                      <div class="clearfix">
+                        <ul class="pull-left actionListing">
+                          <li class="pull-left"><a>Like</a></li>
+                          <li class="pull-left"><a>Comment</a></li>
+                          <li class="pull-left"><a>More <span class="caret"></span></a></li>
+                        </ul>
+                        <span class="pull-left">Feb 12, 2015 14:04 from web</span>
+                      </div>
+                    </div>
+                    <div class="commentWrap">
+                      <input type="text" placeholder="Write a comment" />
+                    </div>
+                  </div>
+                </li>
+                <li class="clearfix">
+                  <div class="imageWrapper pull-left">
+                    <img class="img-responsive" src="./images/avatar.png" alt="user image" />
+                  </div>
+                  <div class="pull-left activityDetailsWrapper">
+                    <div class="activityDetailsWrap">
+                      <h4>Dennis Miller</h4>
+                      <p>Hi Team,</p>
+                      <p>Is there a way to comment on a previous post within an opportunity without it being moved up the wall and thus out of chronological order?
+                        For instance, I have an opportunity with posts as recently as today, and I just uploaded an attachment that pertained to
+                        an earlier post from last week. Now the first thing I see on the wall is the older post and attachments. Please advise
+                        at your convenience.
+                      <p><span class="block">Thanks</span>Dennis</p>
+                      <div class="clearfix">
+                        <ul class="pull-left actionListing">
+                          <li class="pull-left"><a>Like</a></li>
+                          <li class="pull-left"><a>Comment</a></li>
+                          <li class="pull-left"><a>More <span class="caret"></span></a></li>
+                        </ul>
+                        <span class="pull-left">Feb 12, 2015 14:04 from web</span>
+                      </div>
+                    </div>
+                    <div class="commentWrap">
+                      <input type="text" placeholder="Write a comment" />
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="actionButtonWrap">
+            <button class="actionButton"><i class="glyphicon glyphicon-pushpin"></i></button>
+            <button class="actionButton"><i class="glyphicon glyphicon-option-horizontal"></i></button>
+            <button class="btn btn-primary blueActionButton colorWhite">Opportunity Tools<i class="glyphicon glyphicon-menu-down colorWhite"></i></button>
+          </div>
+          <div class="detailsImageWrap">
+            <img alt="image" class="img-responsive" src="./images/bg1.png"/>
+          </div>
+          <ul class="rightsideListing">
+            <li>
+              <h4 class="clearfix cursorPointer">
+                <span class="pull-left">Opportunity details</span>
+                <i class="glyphicon glyphicon-menu-down pull-right"></i>
+              </h4>
+              <ul class="opportunityDetailsList">
+                <li><span>Driver: <strong>Brian Davis </strong></span></li>
+                <li><span>Created: Fri apr 24, 2015, 3:03 PM</span></li>
+                <li><span>Name: Lunar paints</span></li>
+                <li><span>Details: its all about colors being creative bold with your choices</span></li>
+                <li><span>Stage: Close Won</span></li>
+                <li><span>Account: Lunar Paints</span></li>
+                <li><span>Account Id: YU677088903JK90880</span></li>
+                <li><span>Probability(%): 100</span></li>
+                <li><span>Close Date: Wed Apr 03, 2013</span></li>
+                <li><span>Next Step</span></li>
+                <li><span>Lead Source: Web</span></li>
+                <li><span>Campaign</span></li>
+                <li><span>Description</span></li>
+                <li><span>Currency: USD</span></li>
+                <li><span>Amount: $135,000</span></li>
+                <li><span>Departments: </span></li>
+                <li><span>Type: New Customer</span></li>
+                <li><span>Contacts: Seattle</span></li>
+                <li><span>Notes: Marine Coating technlogies</span></li>
+              </ul>
+              <a class="showAnchor">Show Less</a>
+            </li>
+            <li>
+              <h4 class="clearfix cursorPointer">
+                <span class="pull-left">Driver</span>
+                <i class="glyphicon glyphicon-menu-down pull-right"></i>
+              </h4>
+              <div class="clearfix driverDetails">
+                <div class="imageWrapper pull-left">
+                  <img class="img-responsive img-circle" src="./images/avatar.png" alt="user image" />
+                </div>
+                <strong>Brian Davis</strong>
+              </div>
+            </li>
+            <li>
+              <h4 class="clearfix cursorPointer">
+                <span class="pull-left">Associated Team (7)</span>
+                <i class="glyphicon glyphicon-menu-down pull-right"></i>
+              </h4>
+              <ul class="clearfix teamListing">
+                <li class="pull-left">
+                  <div class="imageWrapper">
+                    <img class="img-responsive" src="./images/avatar.png" alt="user image" />
+                  </div>
+                </li>
+                <li class="pull-left">
+                  <div class="imageWrapper">
+                    <img class="img-responsive" src="./images/avatar.png" alt="user image" />
+                  </div>
+                </li>
+                <li class="pull-left">
+                  <div class="imageWrapper">
+                    <img class="img-responsive" src="./images/avatar.png" alt="user image" />
+                  </div>
+                </li>
+                <li class="pull-left">
+                  <div class="imageWrapper">
+                    <img class="img-responsive" src="./images/avatar.png" alt="user image" />
+                  </div>
+                </li>
+                <li class="pull-left">
+                  <div class="imageWrapper">
+                    <img class="img-responsive" src="./images/avatar.png" alt="user image" />
+                  </div>
+                </li>
+                <li class="pull-left">
+                  <div class="imageWrapper">
+                    <img class="img-responsive" src="./images/avatar.png" alt="user image" />
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+	<script src="./js/app.js"></script>
+  </body>
+</html>

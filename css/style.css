@@ -1,0 +1,498 @@
+/*common styling*/
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  background-color: #f1f1f1;
+  padding: 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.block {
+  display: block;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+.noMargin {
+  margin: 0;
+}
+
+.colorWhite {
+  color: #fff;
+}
+
+.whiteBg {
+  background-color: #fff;
+}
+
+.container {
+  width: 1300px;
+}
+
+.imageWrapper {
+  width: 50px;
+  margin-right: 10px;
+  height: 50px;
+}
+
+.header {
+  background-color: #333b47;
+}
+
+.hamburgerButtonWrap {
+  padding: 14px;
+  background-color: #222933;
+  border: 1px solid #000;
+  border-left: none;
+  border-top: none;
+}
+
+.hamburger {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  margin: 0;
+}
+
+.buttonRest {
+  background: none;
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+.hamburger.active .hamburgerIcon {
+  background: transparent;
+}
+
+.hamburger .hamburgerIcon {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  left: 0;
+  top: 8px;
+  background: #fff;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+}
+
+.hamburger.active .hamburgerIcon:before {
+  top: 0;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}
+
+.hamburger.active .hamburgerIcon:after {
+  top: 0;
+  transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+}
+
+.hamburger .hamburgerIcon:before,
+.hamburger .hamburgerIcon:after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  left: 0;
+  background: #fff;
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+}
+
+.hamburger .hamburgerIcon:before {
+  top: -8px;
+}
+
+.hamburger .hamburgerIcon:after {
+  top: 8px;
+}
+
+.buttonRest:active,
+.buttonRest:focus {
+  background: none;
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+.logo {
+  width: 124px;
+  padding: 14px;
+}
+
+.composeButtonWrap {
+  margin-top: 8px;
+  display: inline-block;
+  background-color: #1faed6;
+  padding: 8px 18px;
+  border-radius: 30px;
+}
+
+.composeButtonWrap span {
+  font-size: 30px;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.headerIconWrap,
+.userImageWrap {
+  padding: 9px 0;
+  width: 140px;
+}
+
+.headerIconWrap {
+  border-right: 1px solid #fff;
+  margin-right: 15px;
+}
+
+.headerIconWrap i {
+  color: #8b97a6;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.headerIconWrap .btn {
+  background-color: transparent;
+  border: 1px solid #8b97a6;
+}
+
+.userImageWrap .imageWrapper {
+  width: 32px;
+  height: 32px;
+}
+
+.welcomeText {
+  display: inline-block;
+  width: 40px;
+  font-size: 12px;
+}
+
+.mainContentWrap {
+  background-color: #eaeef2;
+}
+
+
+/*left navigation*/
+
+.leftNavigation {
+  background-color: #222933;
+}
+
+.leftNavigation li {
+  position: relative
+}
+
+.leftNavigation a {
+  padding: 36px 15px;
+  display: block;
+  font-size: 18px;
+  color: #8d98a6;
+}
+
+.leftNavigation a:hover {
+  color: #fff;
+  background-color: #20add4;
+}
+
+.leftNavigation li::after {
+  content: '';
+  transform: translate(0, -50%);
+  right: 0;
+  top: 50%;
+  position: absolute;
+  border-top: 10px solid transparent;
+  border-right: 20px solid #222933;
+  border-bottom: 10px solid transparent;
+}
+
+.leftNavigation i {
+  font-size: 22px;
+  vertical-align: middle;
+}
+
+.leftNavigation span {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+
+/* content listing*/
+
+.contentListing {
+  padding-left: 0;
+}
+
+.contentListing a {
+  color: #323b47;
+  display: block;
+  font-size: 18px;
+  padding: 14px 30px;
+  background-color: #f7f9fa;
+  border-top: 1px solid #dedfe0;
+  border-left: 1px solid #dedfe0;
+}
+
+.contentListing a:hover,
+.contentListing a.active {
+  background-color: #fff;
+  color: #20add4;
+  border-top: none;
+}
+
+
+/*video container styling*/
+
+.videoContainerWrap {
+  position: relative;
+}
+
+.videoContainer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 44px;
+  z-index: 99;
+  background-color: #19191a;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  border-color: #19191a;
+}
+
+.videoContainer:hover,
+.videoContainer:focus {
+  background-color: #19191a;
+  border-color: #19191a;
+}
+
+.videoContainer.active .glyphicon-pause {
+  display: block;
+}
+
+.videoContainer.active .glyphicon-play {
+  display: none;
+}
+
+.videoContainer .glyphicon-pause {
+  display: none;
+}
+
+
+/*right side content*/
+
+.actionButtonWrap {
+  margin-top: 10px;
+}
+
+.actionButton {
+  background-color: #fcfcfc;
+  border: 1px solid #cacfd5;
+  padding: 6px 10px;
+}
+
+.actionButton i {
+  color: #8d98a8;
+  font-size: 17px;
+}
+
+.blueActionButton {
+  background-color: #1e9cd1;
+}
+
+.blueActionButton i {
+  margin-left: 10px;
+}
+
+.detailsImageWrap {
+  height: 140px;
+  margin: 12px 0 20px;
+}
+
+.detailsImageWrap img {
+  height: 100%;
+}
+
+.rightsideListing>li {
+  padding: 10px;
+  background-color: #f6f8fa;
+  margin-bottom: 20px;
+}
+
+.rightsideListing h4 {
+  border-bottom: 1px solid #e5e8ee;
+  ;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.rightsideListing .glyphicon-menu-down {
+  color: #6b6f77;
+}
+
+.driverDetails strong {
+  margin-top: 16px;
+  display: inline-block;
+}
+
+.rightsideListing .opportunityDetailsList {
+  margin-bottom: 15px;
+}
+
+.teamListing .imageWrapper {
+  margin: 0 15px 15px 0;
+}
+
+
+/*middle content*/
+
+.searchTitleWrap {
+  margin: 10px 0;
+}
+
+.searchWrap {
+  position: relative;
+  padding-left: 15px;
+  margin-left: 15px;
+  border-left: 1px solid #d0d4d8;
+}
+
+.searchTerm {
+  padding: 10px;
+  border: none;
+  background: transparent;
+  border-radius: 5px;
+  padding-left: 5px;
+  margin-left: 5px;
+}
+
+.searchTerm:focus {
+  outline: none;
+}
+
+.searchButton {
+  position: absolute;
+  left: 80px;
+  top: 10px;
+  color: #8d98a8;
+  cursor: pointer;
+}
+
+.feedsSublisting {
+  margin-top: 20px;
+}
+
+.feedsSublisting li {
+  margin-right: 20px;
+}
+
+.feedsSublisting a {
+  color: #1295b9;
+}
+
+.feedsSublisting a:hover {
+  font-weight: bold;
+}
+
+.tooltip.bottom {
+  color: #ddd;
+}
+
+.commentFilterWrap {
+  border-bottom: 1px solid #ddd;
+  margin: 50px 0 20px;
+}
+
+.commentFilterWrap .settingIcon {
+  color: #8d98a6;
+  font-size: 18px;
+  vertical-align: middle;
+  padding-left: 5px;
+  margin-left: 5px;
+  border-left: 1px solid #d0d4d8;
+}
+
+.commentListing {
+  margin: 0;
+}
+
+.commentListing li {
+  margin-right: 20px;
+}
+
+.commentListing a {
+  color: #323b47;
+  padding-bottom: 8px;
+  display: inline-block;
+}
+
+.commentListing a:hover {
+  font-weight: bold;
+  border-bottom: 4px solid #1eaed6;
+}
+
+.userDetailsListing>li {
+  margin-bottom: 20px;
+}
+
+.activityDetailsWrapper {
+  width: 450px;
+  border: 1px solid #e5e8ee;
+}
+
+.activityDetailsWrap {
+  padding: 10px;
+}
+
+.activityDetailsWrap video {
+  width: 100%;
+}
+
+.activityDetailsWrap h4 {
+  margin-top: 0;
+}
+
+.actionListing li {
+  margin-right: 10px;
+}
+
+.actionListing li a {
+  color: #1295b9;
+}
+
+.commentWrap {
+  background-color: #fbfbfb;
+  padding: 10px;
+}
+
+.commentWrap input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #e5e8ee;
+}
