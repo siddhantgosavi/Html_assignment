@@ -211,7 +211,7 @@ ul {
 }
 
 .leftNavigation a {
-  padding: 36px 15px;
+  padding: 15px;
   display: block;
   font-size: 18px;
   color: #8d98a6;
@@ -256,8 +256,12 @@ ul {
   font-size: 18px;
   padding: 14px 30px;
   background-color: #f7f9fa;
-  border-top: 1px solid #dedfe0;
+  border-top: 1px solid #dedfe0;;
   border-left: 1px solid #dedfe0;
+}
+
+.contentListing a:last-child {
+  border-bottom: 1px solid #dedfe0;
 }
 
 .contentListing a:hover,
@@ -266,7 +270,6 @@ ul {
   color: #20add4;
   border-top: none;
 }
-
 
 /*video container styling*/
 
@@ -284,6 +287,12 @@ ul {
   padding: 10px;
   transform: translate(-50%, -50%);
   border-color: #19191a;
+}
+
+.videoThumbnail {
+  padding: 12px;
+  background-color: #f2f2f2;
+  margin: -5px 0 20px;
 }
 
 .videoContainer:hover,
@@ -450,11 +459,12 @@ ul {
   color: #323b47;
   padding-bottom: 8px;
   display: inline-block;
+  border-bottom: 4px solid transparent;
 }
 
 .commentListing a:hover {
   font-weight: bold;
-  border-bottom: 4px solid #1eaed6;
+  border-bottom-color: #1eaed6;
 }
 
 .userDetailsListing>li {
@@ -467,9 +477,14 @@ ul {
 }
 
 .activityDetailsWrap {
-  padding: 10px;
+  padding: 10px 15px;
 }
-
+.activityDetailsWrap .title {
+  background-color: #f0f0f0;
+  padding: 5px;
+  border-radius: 4px;
+  color: #1295b9
+}
 .activityDetailsWrap video {
   width: 100%;
 }
@@ -486,9 +501,13 @@ ul {
   color: #1295b9;
 }
 
+.actionListing li a:hover {
+  color: #286090;
+}
+
 .commentWrap {
   background-color: #fbfbfb;
-  padding: 10px;
+  padding: 10px 15px;
 }
 
 .commentWrap input {
